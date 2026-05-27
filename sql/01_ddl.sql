@@ -168,3 +168,21 @@ CREATE TABLE exercicio_executado (
     CONSTRAINT ck_repeticoes_realizadas     CHECK (repeticoes_realizadas > 0),
     CONSTRAINT ck_peso_utilizado            CHECK (peso_utilizado > 0)
 );
+
+ALTER TABLE usuario 
+MODIFY COLUMN data_cadastro 
+TIMESTAMP 
+default CURRENT_TIMESTAMP;
+
+ALTER TABLE usuario
+MODIFY COLUMN objetivo 
+ENUM(
+    'HIPERTROFIA',
+    'EMAGRECIMENTO',
+    'CONDICIONAMENTO',
+    'REABILITAÇÃO'
+) NOT NULL;
+
+ALTER TABLE exercicio_executado 
+    DROP CONSTRAINT ck_peso_utilizado,
+    ADD CONSTRAINT ck_peso_utilizado CHECK (peso_utilizado >= 0);
