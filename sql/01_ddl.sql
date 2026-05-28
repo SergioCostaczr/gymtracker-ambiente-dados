@@ -1,6 +1,6 @@
 -- =============================================================
 -- GymTracker - Script DDL
--- Autor: Manoel Sérgio Costa Lima Filho
+-- Disciplina: Ambiente de Dados | UNIFOR 2026.1
 -- =============================================================
 
 CREATE DATABASE IF NOT EXISTS gymtracker;

@@ -1,7 +1,6 @@
 -- =============================================================
 -- GymTracker - Script DML (Povoamento)
 -- Disciplina: Ambiente de Dados | UNIFOR 2026.1
--- Aluno: Manoel Sérgio Costa Lima Filho
 -- =============================================================
 
 USE gymtracker;
