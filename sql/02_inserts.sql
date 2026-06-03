@@ -1,6 +1,5 @@
 -- =============================================================
 -- GymTracker - Script DML (Povoamento)
--- Disciplina: Ambiente de Dados | UNIFOR 2026.1
 -- =============================================================
 
 USE gymtracker;

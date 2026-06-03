@@ -1,6 +1,5 @@
 -- =============================================================
 -- GymTracker - Script DDL
--- Disciplina: Ambiente de Dados | UNIFOR 2026.1
 -- =============================================================
 
 CREATE DATABASE IF NOT EXISTS gymtracker;
