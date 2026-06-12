@@ -38,6 +38,20 @@ O banco é composto pelas seguintes entidades principais:
 | `exercicio_executado` | Armazena o desempenho obtido em cada exercício |
 | `log_peso_usuario` | Audita alterações feitas no peso do usuário |
 
+### Normalização
+
+Na modelagem do banco de dados foram aplicadas as três primeiras regras formais de normalização:
+
+- **Primeira Forma Normal (1FN):** os atributos possuem valores atômicos, sem grupos repetitivos ou campos multivalorados.
+- **Segunda Forma Normal (2FN):** os atributos não-chave dependem integralmente de suas respectivas chaves primárias.
+- **Terceira Forma Normal (3FN):** foram eliminadas dependências transitivas entre atributos não-chave.
+
+Essa organização reduz a redundância dos dados, evita anomalias de inserção, atualização e exclusão e melhora a integridade do banco.
+
+### Modelo Entidade-Relacionamento
+
+![Modelo Entidade-Relacionamento do GymTracker](docs/MER_GYMTRACKER.png)
+
 ### Diagrama Entidade-Relacionamento
 
 ![Diagrama Entidade-Relacionamento do GymTracker](docs/DER_GYMTRACKER.drawio.png)
